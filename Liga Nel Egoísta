@@ -1,0 +1,188 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga Blue Lock - Onde os Gênios Nascem</title>
+    <!-- Incluindo Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração do Tailwind para usar o tema padrão e classes personalizadas se necessário -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Usando a fonte Inter
+                    },
+                    colors: {
+                        'blue-lock-dark': '#001f3f', // Azul escuro inspirado em Blue Lock
+                        'blue-lock-medium': '#004d99', // Azul médio
+                        'blue-lock-light': '#e6f2ff', // Azul claro para fundos
+                        'blue-lock-accent': '#ff6600', // Laranja vibrante para detalhes
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Link para a fonte Inter do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para garantir que a fonte Inter seja aplicada */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-blue-lock-light text-gray-800 antialiased">
+
+    <!-- Cabeçalho Principal do Site -->
+    <header class="bg-blue-lock-dark text-white py-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <!-- Logo da Liga Blue Lock -->
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <!-- Placeholder para o logo. Em um projeto real, você colocaria uma imagem aqui. -->
+                <img src="https://placehold.co/80x80/004d99/ffffff?text=BL" alt="Logo da Liga Blue Lock" class="w-20 h-20 rounded-full border-2 border-blue-lock-accent">
+                <h1 class="text-4xl font-extrabold text-blue-lock-accent tracking-wide">Liga Blue Lock</h1>
+            </div>
+            <!-- Navegação Principal -->
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-6">
+                    <li><a href="#home" class="text-lg hover:text-blue-lock-accent transition duration-300 ease-in-out">Início</a></li>
+                    <li><a href="#sobre" class="text-lg hover:text-blue-lock-accent transition duration-300 ease-in-out">Sobre</a></li>
+                    <li><a href="#jogadores" class="text-lg hover:text-blue-lock-accent transition duration-300 ease-in-out">Jogadores</a></li>
+                    <li><a href="#partidas" class="text-lg hover:text-blue-lock-accent transition duration-300 ease-in-out">Partidas</a></li>
+                    <li><a href="#noticias" class="text-lg hover:text-blue-lock-accent transition duration-300 ease-in-out">Notícias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal de Conteúdo -->
+    <main class="container mx-auto my-8 px-4">
+
+        <!-- Seção de Destaque/Hero Section -->
+        <section id="home" class="bg-gradient-to-r from-blue-lock-medium to-blue-lock-dark text-white p-10 rounded-xl shadow-lg mb-12 text-center">
+            <h2 class="text-5xl font-bold mb-4">Bem-vindo ao Campo de Batalha dos Gênios!</h2>
+            <p class="text-xl mb-6">Descubra tudo sobre a Liga Blue Lock, onde apenas o mais egoísta e talentoso atacante sobrevive para se tornar o melhor do mundo!</p>
+            <a href="#jogadores" class="inline-block bg-blue-lock-accent text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105">
+                Conheça os Atacantes
+            </a>
+        </section>
+
+        <!-- Seção Sobre a Liga -->
+        <section id="sobre" class="bg-white p-8 rounded-xl shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-blue-lock-dark mb-6 border-b-2 border-blue-lock-accent pb-2">Sobre a Liga Blue Lock</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-4 text-lg leading-relaxed">
+                        A Liga Blue Lock é um projeto revolucionário criado por Ego Jinpachi com o objetivo de forjar o atacante mais egoísta e poderoso do Japão, capaz de liderar a seleção nacional à vitória na Copa do Mundo. Mais do que um simples centro de treinamento, Blue Lock é uma prisão de talentos, onde 300 jovens atacantes competem em um ambiente de eliminação constante.
+                    </p>
+                    <p class="mb-4 text-lg leading-relaxed">
+                        Cada partida é uma batalha pela sobrevivência, onde a individualidade e a capacidade de marcar gols são as únicas moedas de troca. Aqueles que são eliminados nunca mais poderão jogar pela seleção japonesa. É um experimento brutal, mas que promete revelar o futuro do futebol japonês.
+                    </p>
+                </div>
+                <div>
+                    <!-- Imagem placeholder para a seção "Sobre" -->
+                    <img src="https://placehold.co/600x400/001f3f/ffffff?text=Blue+Lock+Concept" alt="Conceito Blue Lock" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Jogadores em Destaque -->
+        <section id="jogadores" class="bg-white p-8 rounded-xl shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-blue-lock-dark mb-6 border-b-2 border-blue-lock-accent pb-2">Atacantes em Destaque</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card do Jogador 1: Isagi Yoichi -->
+                <div class="bg-blue-lock-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
+                    <img src="https://placehold.co/150x150/004d99/ffffff?text=Isagi" alt="Foto de Isagi Yoichi" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-lock-accent">
+                    <h3 class="text-2xl font-semibold text-blue-lock-dark text-center mb-2">Isagi Yoichi</h3>
+                    <p class="text-center text-gray-600 mb-4">O protagonista da história. Com sua "metavisão" e inteligência tática, ele busca evoluir a cada partida, adaptando-se e devorando os talentos alheios.</p>
+                    <p class="text-center text-sm font-medium text-blue-lock-accent">Posição: Atacante</p>
+                </div>
+
+                <!-- Card do Jogador 2: Bachira Meguru -->
+                <div class="bg-blue-lock-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
+                    <img src="https://placehold.co/150x150/004d99/ffffff?text=Bachira" alt="Foto de Bachira Meguru" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-lock-accent">
+                    <h3 class="text-2xl font-semibold text-blue-lock-dark text-center mb-2">Bachira Meguru</h3>
+                    <p class="text-center text-gray-600 mb-4">Um driblador imprevisível e criativo, que joga movido pelo "monstro" que carrega dentro de si. Sua alegria em campo é contagiante.</p>
+                    <p class="text-center text-sm font-medium text-blue-lock-accent">Posição: Atacante</p>
+                </div>
+
+                <!-- Card do Jogador 3: Rin Itoshi -->
+                <div class="bg-blue-lock-light p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
+                    <img src="https://placehold.co/150x150/004d99/ffffff?text=Rin" alt="Foto de Rin Itoshi" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-lock-accent">
+                    <h3 class="text-2xl font-semibold text-blue-lock-dark text-center mb-2">Rin Itoshi</h3>
+                    <p class="text-center text-gray-600 mb-4">O atacante mais talentoso e frio de Blue Lock, com uma técnica impecável e um desejo insaciável de superar seu irmão, Sae Itoshi.</p>
+                    <p class="text-center text-sm font-medium text-blue-lock-accent">Posição: Atacante</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Partidas Recentes -->
+        <section id="partidas" class="bg-white p-8 rounded-xl shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-blue-lock-dark mb-6 border-b-2 border-blue-lock-accent pb-2">Partidas Recentes</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg shadow-sm">
+                    <thead>
+                        <tr class="bg-blue-lock-medium text-white">
+                            <th class="py-3 px-4 text-left rounded-tl-lg">Partida</th>
+                            <th class="py-3 px-4 text-left">Placar</th>
+                            <th class="py-3 px-4 text-left rounded-tr-lg">Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-blue-lock-light transition-colors duration-200">
+                            <td class="py-3 px-4">Equipe Z vs. Equipe V</td>
+                            <td class="py-3 px-4 font-semibold text-blue-lock-accent">3 - 2</td>
+                            <td class="py-3 px-4">15/07/2025</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-blue-lock-light transition-colors duration-200">
+                            <td class="py-3 px-4">Blue Lock XI vs. Seleção Japonesa Sub-20</td>
+                            <td class="py-3 px-4 font-semibold text-blue-lock-accent">4 - 3</td>
+                            <td class="py-3 px-4">20/07/2025</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-blue-lock-light transition-colors duration-200">
+                            <td class="py-3 px-4">Equipe A vs. Equipe B</td>
+                            <td class="py-3 px-4 font-semibold text-blue-lock-accent">1 - 0</td>
+                            <td class="py-3 px-4">25/07/2025</td>
+                        </tr>
+                        <tr class="hover:bg-blue-lock-light transition-colors duration-200">
+                            <td class="py-3 px-4">Partida Final de Seleção</td>
+                            <td class="py-3 px-4 font-semibold text-blue-lock-accent">Em Breve</td>
+                            <td class="py-3 px-4">XX/08/2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seção de Notícias (Exemplo) -->
+        <section id="noticias" class="bg-white p-8 rounded-xl shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-blue-lock-dark mb-6 border-b-2 border-blue-lock-accent pb-2">Últimas Notícias</h2>
+            <div class="space-y-6">
+                <div class="border-l-4 border-blue-lock-accent pl-4">
+                    <h3 class="text-xl font-semibold mb-2">Isagi Yoichi Desperta Nova Habilidade!</h3>
+                    <p class="text-gray-700 mb-2">Em um treino intenso, Isagi demonstrou uma nova capacidade de adaptação, surpreendendo até mesmo Ego Jinpachi.</p>
+                    <span class="text-sm text-gray-500">Publicado em: 01/08/2025</span>
+                </div>
+                <div class="border-l-4 border-blue-lock-accent pl-4">
+                    <h3 class="text-xl font-semibold mb-2">Blue Lock Anuncia Próxima Fase de Seleção</h3>
+                    <p class="text-gray-700 mb-2">Os dez melhores atacantes avançarão para a fase final, onde enfrentarão desafios ainda maiores.</p>
+                    <span class="text-sm text-gray-500">Publicado em: 28/07/2025</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé do Site -->
+    <footer class="bg-blue-lock-dark text-white py-6 text-center rounded-t-xl shadow-inner">
+        <p class="text-lg">&copy; 2025 Liga Blue Lock. Todos os direitos reservados. Criado para os egoístas!</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-white hover:text-blue-lock-accent transition duration-300">Privacidade</a>
+            <a href="#" class="text-white hover:text-blue-lock-accent transition duration-300">Termos de Uso</a>
+        </div>
+    </footer>
+
+</body>
+</html>
